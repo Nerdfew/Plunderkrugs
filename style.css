@@ -1,0 +1,149 @@
+
+.background {
+
+    background-color:white;
+    width:auto;
+    height:auto;
+    display:flex;
+    background:no-repeat;
+}
+.logo {
+   
+    font-size: 60px;
+    padding-left:20px;
+    padding-top:20px;
+}
+
+
+
+p {
+   
+  
+    font-size: 40px;
+    
+
+}
+
+
+
+
+nav {
+    background:black;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items:right;
+    padding:0px;
+    height:150px;
+    font-size:40px;
+    font-family:Rowdies;
+    margin:0;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li {
+    margin: 0 10px;
+    padding-left:40px;
+    padding-top: 40px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-shadow:2px 4px 4px black;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+
+
+  
+.maindiv {
+    padding:10px;
+    position:absolute;
+    padding-top:40px;
+
+    font-family:Roboto;
+    font-weight:10px;
+
+    color:white;
+    top: 45%;
+    background-color:#07152b;
+    height:1000px;
+    width:fit-content;
+   
+    border-radius: 20px;
+    
+}
+
+
+.titletext {
+    
+
+
+    padding-top: 400px;
+    font-size:7rem;
+    color:white;
+    text-shadow:2px 4px 4px black;
+    text-align:center;
+    font-family:Rowdies;
+
+    
+    
+    
+}
+
+.topcontent {
+  margin:auto;
+  width:auto;
+  height:800px;
+  background-image:url(Plunderkrugs\ Moodboard.png);
+  background-position-x:center;
+  background-position-y:center;
+  background-size:cover;
+  
+}
+
+h2 {
+    text-align:center;
+    font-size:60px;
+}
+
+* {margin:0;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+} 
