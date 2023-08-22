@@ -66,33 +66,42 @@ nav ul {
   
 .welcomediv {
 
-  
-  
-    
-    display:inline-block;
     font-family:Roboto;
     font-size:20px;
     color:white;
     top:60%;
-    background-image:linear-gradient(to right,#4f3983, grey);
     height: 650px;
-    width:100%;;
+    width:auto;
     border-top:6px solid black;
-    
 }
-.welcomediv h1 {
-  top:10%;
-  padding:10px 10px 10px;
+.welcomediv .welcomebackgroundimg {
+  background-image: url("AdobeStock_619513067_Preview.jpeg");
   
-  text-align:left;
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+
+  height: 100%; 
+  
+
+  background-position: center;
+
+  background-size: cover;
+
+}
+
+.welcomediv  h1 {
+  position:relative;
   font-family:rowdies;
+  color:white;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
 }
 .welcomediv h2 {
-  top:10%;
-  padding:10px 10px 10px;
-  display:inline-block;
+  
   font-size:25px;
-  text-align:left;
   font-family:rowdies;
   color:white;
 }
