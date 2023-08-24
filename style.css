@@ -23,6 +23,9 @@ padding-left:auto;
 }
 
 nav {
+    
+    top:0px;
+
     background:transparent;
     color:white;
     list-style: none;
@@ -65,27 +68,24 @@ nav ul {
 
   
 .welcomediv {
-  
+
     font-family:Roboto;
     font-size:20px;
     color:white;
-    top:60%;
+
     height: 650px;
     width:auto;
     border-top:6px solid black;
-    margin:auto;
-    line-height: 15px;
-
 }
-.welcomediv .welcomebackgroundimg {
-  background-image: url("AdobeStock_619513067_Preview.jpeg");
+.bg-image {
   
 
-  filter: blur(5px) ;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
 
-
-
-  height: 100%; 
+    width:100%;
+    height: 100%; 
   
 
   background-position: center;
@@ -93,30 +93,31 @@ nav ul {
   background-size: cover;
 
 }
-
-.welcomediv h1 {
+.blur {
   position:absolute;
-  padding:10px 10px 10px;
+  top:0;
+  left:0;
+  z-index:5;
+  background-color:rgba(255,255,255,0.3);
+  width:100%;
+  height: 100%;
+  backdrop-filter: blur(13px);
+
+}
+
+.welcomediv  h1 {
+  position:relative;
   font-family:rowdies;
   color:white;
   z-index: 2;
-  margin:auto;
-  display:inline-block;
-  white-space:normal;
-  
-  
+  top: 50%;
+  left: 50%;
 }
 .welcomediv h2 {
-  display:inline-block;
-  position:absolute;
+  
+  font-size:25px;
   font-family:rowdies;
   color:white;
-  z-index: 2;
-  margin-top:15px;
-  line-height:2em;
-  padding:10px 10px 10px;
-  white-space:normal;
-  font-size:20px;
 }
  
 .charactersdiv {
@@ -140,6 +141,7 @@ nav ul {
 .maindiv h1 {
   padding-top:10px;
   font-family:Rowdies;
+  z-index:1;
 }
 
 
@@ -154,6 +156,7 @@ nav ul {
     text-shadow:2px 4px 4px black;
     text-align:center;
     font-family:Rowdies;
+    z-index:1;
 
     
     
@@ -174,7 +177,7 @@ nav ul {
 .topcontent {
   margin:0;
   width:auto;
-  height:500px;
+  height:650px;
   background-image:url(Plunderkrugs\ Moodboard.png);
   background-position-x:center;
   background-position-y:center;
