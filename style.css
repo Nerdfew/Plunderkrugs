@@ -23,6 +23,9 @@ padding-left:auto;
 }
 
 nav {
+    
+    top:0px;
+
     background:transparent;
     color:white;
     list-style: none;
@@ -65,24 +68,31 @@ nav ul {
 
   
 .welcomediv {
-
+    display:block;
+    position:relative;
     font-family:Roboto;
     font-size:20px;
     color:white;
-    top:60%;
+
     height: 650px;
     width:auto;
     border-top:6px solid black;
+    
 }
-.welcomediv .welcomebackgroundimg {
-  background-image: url("AdobeStock_619513067_Preview.jpeg");
+.bg-image {
+  
+  background-image: url(AdobeStock_619513067_Preview.jpeg);
+    background-position-x:center;
+    background-position-y:center;
+    background-size:cover;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position:relative;
+    z-index:-1;
   
 
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-
-  height: 100%; 
+    width:100%;
+    height: 100%; 
   
 
   background-position: center;
@@ -90,20 +100,48 @@ nav ul {
   background-size: cover;
 
 }
+.blur {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:5;
+  background-color:rgba(255,255,255,0.3);
+  width:100%;
+  height: 100%;
+  backdrop-filter: blur(13px);
+
+}
 
 .welcomediv  h1 {
-  position:relative;
+  position:absolute;
+  padding:5px 5px 5px;
+  display:inline-block;
   font-family:rowdies;
   color:white;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
+  top: 5%;
+  text-shadow:2px 4px 4px black;
+
+  z-index:1;
+  
 }
 .welcomediv h2 {
-  
+  position:absolute;
+  padding:10px 10px 10px;
+  top: 13%;
   font-size:25px;
   font-family:rowdies;
   color:white;
+  z-index:1;
+  text-shadow:2px 4px 4px black;
+}
+.welcomediv p {
+  position:absolute;
+  padding:5px 5px 5px;
+  display:inline-block;
+  font-family:rowdies;
+  color:white;
+  top: 20%;
+  text-shadow:2px 4px 4px black;
 }
  
 .charactersdiv {
@@ -127,6 +165,7 @@ nav ul {
 .maindiv h1 {
   padding-top:10px;
   font-family:Rowdies;
+  z-index:1;
 }
 
 
@@ -141,6 +180,7 @@ nav ul {
     text-shadow:2px 4px 4px black;
     text-align:center;
     font-family:Rowdies;
+    z-index:1;
 
     
     
@@ -161,7 +201,7 @@ nav ul {
 .topcontent {
   margin:0;
   width:auto;
-  height:500px;
+  height:650px;
   background-image:url(Plunderkrugs\ Moodboard.png);
   background-position-x:center;
   background-position-y:center;
