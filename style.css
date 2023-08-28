@@ -14,9 +14,30 @@
     padding-top:5px;
 }
 
+#scrollwrapper {
+  position:absolute;
+  height:100%;
+  width:100%;
+
+
+}
+
+.panels {
+  position:relative;
+  height:100%;
+ 
+  width:100%;
+  z-index:1000;
 
 
 
+}
+
+#wrapper {
+  position:absolute;
+  height:100%;
+  width:100%;
+}
 
 .logo {
 padding-left:auto;
@@ -25,7 +46,7 @@ padding-left:auto;
 nav {
     
     top:0px;
-
+    display:flex;
     background:transparent;
     color:white;
     list-style: none;
@@ -66,61 +87,67 @@ nav ul {
   }
 
 
-  
-.welcomediv {
 
+  .carot {
+    height: 0;
+    position: absolute;
+    width: 0;
+    left: 48%;
+    top: -80px;
+    
+    border: 40px solid transparent;
+    border-radius:2px;
+    border-bottom-color: #07152b;
+    margin:0 auto;
+}
+  
+#welcomediv {
+    position:relative;
+    margin-top:70%;
     font-family:Roboto;
-    font-size:20px;
+    font-size:2.3vh;
     color:white;
-
-    height: 650px;
+    z-index:-99;
+    height:fit-content;
     width:auto;
-    border-top:6px solid black;
-}
-.bg-image {
-  
-
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-
-    width:100%;
-    height: 100%; 
-  
-
-  background-position: center;
-
-  background-size: cover;
-
-}
-.blur {
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:5;
-  background-color:rgba(255,255,255,0.3);
-  width:100%;
-  height: 100%;
-  backdrop-filter: blur(13px);
+    background-color: #07152b;
 
 }
 
-.welcomediv  h1 {
-  position:relative;
+#welcomediv p {
+  padding-top:2vh;
+  padding-bottom: 5px;
+  text-align:center;
+  font-family:rowdies;
+  text-shadow:2px 4px 4px black;
+  border-bottom:5px solid black;
+  border-radius:2px;
+}
+
+
+
+#welcomediv  h1 {
+  font-size:5vh;
   font-family:rowdies;
   color:white;
   z-index: 2;
-  top: 50%;
-  left: 50%;
-}
-.welcomediv h2 {
+  left:0;
+  text-align:center;
+  text-shadow:2px 4px 4px black;
+  padding-top:5vh;
   
-  font-size:25px;
+  
+}
+#welcomediv h2 {
+  display:flex;
+  font-size:25rem;
   font-family:rowdies;
   color:white;
+  text-shadow:2px 4px 4px black;
+  padding-bottom:10rem;
 }
  
-.charactersdiv {
+#charactersdiv {
 
   
   
@@ -129,19 +156,41 @@ nav ul {
   font-family:Roboto;
   font-size:20px;
   color:white;
-  top:60%;
+  
   background-color:#07152b;
-  height: 650px;
+  height: fit-content;
   width:100%;;
-  border-top:7px solid black;
+
+
 
   
+}
+
+#charactersdiv h1 {
+
+  padding-top:10px;
+  font-family:rowdies;
+  color:white;
+  text-shadow:2px 4px 4px black;
+  font-size:5vh;
+  
+}
+
+#charactersdiv p {
+  padding-top:2vh;
+  padding-bottom: 5px;
+  text-align:center;
+  font-family:rowdies;
+  text-shadow:2px 4px 4px black;
+  border-bottom:5px solid black;
+  border-radius:2px;
 }
 
 .maindiv h1 {
   padding-top:10px;
   font-family:Rowdies;
   z-index:1;
+
 }
 
 
@@ -149,7 +198,7 @@ nav ul {
     
     align-items: center;
     padding-top: 5px;
-    font-size:55px;
+    font-size:5vh;
     padding-right:55px;
     padding-bottom:5px;
     color:white;
@@ -174,15 +223,18 @@ nav ul {
   padding-top:0px;
 }
 
-.topcontent {
+#topcontent {
+  background:#eee;
+  position:fixed;
   margin:0;
-  width:auto;
-  height:650px;
+  width:100%;
+  top:0;
+  height:100%;
   background-image:url(Plunderkrugs\ Moodboard.png);
   background-position-x:center;
   background-position-y:center;
   background-size:cover;
-  
+  z-index:-99;
   text-align: center;
   
 }
@@ -303,6 +355,7 @@ h1 {
   #hamburger-icon {
     display: block;
   }
+  
 }
 
 .slide-container {
@@ -360,10 +413,11 @@ h1 {
 	background-color:black;
   opacity: 1;
 }
-.footer{
+#footer{
 	background-color: #24262b;
     padding: 60px 0;
     padding-left:20%;
+    position:relative;
 }
 .footer-col{
    width: 30%;
