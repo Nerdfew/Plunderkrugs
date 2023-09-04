@@ -48,13 +48,13 @@ height:auto;
 }
 
 nav {
-    overflow: hidden;
+   
     display:flex;
+    justify-content: space-between;
     align-items: center;
     background:black;
     color:white;
     list-style: none;
-    justify-content: center;
     width:100%;
     height:80px;
     align-items: center;
@@ -172,7 +172,7 @@ nav ul {
   color:white;
   
   background-color:#07152b;
-  height: fit-content;
+  height: 400px;
   width:100%;
 
 
@@ -217,12 +217,12 @@ nav ul {
 
 .titletext h1{
     
-    text-align:center;
-    font-size:65px;
+ 
+    font-size:70px;
     padding-bottom:15px;
     color:white;
     text-shadow:2px 4px 4px black;
-    text-align:center;
+   
     font-family:Rowdies;
     z-index:1;
 
@@ -233,7 +233,7 @@ nav ul {
 
 .titletext p {
   font-family: Roboto;
-  font-size:18px;
+  font-size:25px;
   padding-top:0px;
   text-align:center;
   color:white;
@@ -278,10 +278,12 @@ h1 {
 
 
 .search {
-  display:flex;
-  float:right;
-  padding:25px;
+
+
+  position:absolute;
   
+  left:85%;
+  top:25px;
         
 }
 
@@ -615,21 +617,34 @@ button:active > svg > path {
 }
 
 .recent-news {
-  background-color: #24262b;
-  
+  width:100%;
+  background-color:grey;
 
 }
-
-.recent-news .news-title {
+.recent-news .container {
+  width:85%;
+  margin:20px auto;
+}
+.recent-news .container .news-title {
+  width:60%;
   text-align:center;
-    padding-top:30px;
-    padding-bottom:30px;
-    font-family: Rowdies;
-    font-size:55px;
-    color:white;
-}
-.recent-news .row {
-  display:flex;
-  flex-wrap:wrap;
+  margin:auto;
+  font-size: 65px;
+  color:white;
+  font-family:Rowdies;
 
 }
+
+.recent-news .container p {
+  font-size:18px;
+  color:white;
+  margin-top: 20px;
+}
+.recent-news .container .cards{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin:25px auto;
+   
+}
+
