@@ -578,7 +578,7 @@ button {
   padding-bottom: 1em;
   position: relative;
   transition: filter var(--motion-duration);
-  text-shadow:2px 4px 4px black;
+  
   border-radius:5em;
 }
 
@@ -596,6 +596,8 @@ button > span {
   transition: transform var(--motion-duration) var(--motion-ease);
   z-index: 1;
   font-family:Rowdies;
+  color:#07152b;
+  font-size:25px;
 
 }
 
