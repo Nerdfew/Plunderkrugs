@@ -53,7 +53,7 @@ nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background:black;
+    background-color:transparent;
     color:white;
     list-style: none;
     width:100%;
