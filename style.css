@@ -394,6 +394,7 @@ h1 {
 }
 .slider {
   display:flex;
+
   aspect-ratio: 16/9;
   overflow-x:auto;
   scroll-snap-type: x mandatory;
@@ -410,7 +411,9 @@ h1 {
 .slider img{
   flex: 1 0 100%;
   scroll-snap-align: start;
-  object-fit:cover;
+  
+
+
 
 }
 .slider-nav {
@@ -573,6 +576,7 @@ button:active > svg > path {
   text-align:center;
   color:white;
   text-shadow:2px 4px 4px black;
+  padding:5px;
 
 }
 
@@ -646,7 +650,7 @@ button:active > svg > path {
 }
 .left-footer h1{
   position:absolute;
-  left: 17%;
+  left: 16%;
   text-align:center;
   font-family:rowdies;
   color:white;
@@ -806,6 +810,7 @@ button:active > svg > path {
     height:auto;
     cursor:pointer;
     opacity: 50%;
+    border-radius:5px;
 
   }
   .gallery-container .gallery-box .gallery-dream img:hover {
@@ -836,6 +841,13 @@ button:active > svg > path {
     height:500px;
     width:650px;
     padding: 4px;
+
+  }
+
+  .mobile-footer {
+    display:none;
+    height:auto;
+    width:auto;
 
   }
 
@@ -873,6 +885,12 @@ button:active > svg > path {
     .right-footer h1 {
       display:none;
     }
+    .right-footer {
+      display:none;
+    }
+    .left-footer {
+      display:none;
+    }
     .vl {
       display:none;
     }
@@ -898,6 +916,22 @@ button:active > svg > path {
   .gallery-container .heading h3{
     font-size:2em;
   }
+  .gallery-container .gallery-box .gallery-dream img{
+    opacity:100%;
+  }
+  #lightbox img {
+    scale:.65;
+  }
+  
+  footer {
+    display:none;
+  }
+  .mobile-footer {
+    display:flex;
+    width:auto;
+    height:300px;
+  }
+
   
     
   }
