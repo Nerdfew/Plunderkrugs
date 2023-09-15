@@ -799,7 +799,7 @@ button:active > svg > path {
     display:flex;
     flex-direction:column;
     width:100%;
-    padding:5px;
+    padding:10px;
 
   }
   .gallery-container .gallery-box .gallery-dream img{
@@ -811,6 +811,7 @@ button:active > svg > path {
     cursor:pointer;
     opacity: 50%;
     border-radius:5px;
+    padding:5px;
 
   }
   .gallery-container .gallery-box .gallery-dream img:hover {
