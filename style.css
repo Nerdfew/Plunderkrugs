@@ -18,7 +18,9 @@ p {
   font-family:roboto;
 }
 
-
+body {
+  overflow-x:hidden;
+}
 
 
 #scrollwrapper {
@@ -187,7 +189,7 @@ nav ul {
   color:white;
   
   background-color:#07152b;
-  height: 400px;
+
   width:100%;
 
 
@@ -283,15 +285,7 @@ h1 {
   box-sizing: border-box;
 
 }
-.container{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display:flex;
-	flex-wrap: wrap;
-  justify-content: space-between;
-}
+
 
 
 .search-container {
@@ -393,11 +387,13 @@ h1 {
 
 .slide-container {
   padding:1rem;
+  text-align: center;
 }
 .slider-wrapper {
   position:relative;
   max-width:48rem;
-  margin:0 auto;
+  margin:10px auto;
+
 }
 .slider {
   display:flex;
@@ -497,6 +493,7 @@ button {
   padding-bottom: 1em;
   position: relative;
   transition: filter var(--motion-duration);
+  text-align:center;
   
   border-radius:5em;
 }
